@@ -27,28 +27,18 @@ h3 {
     margin-top: 1in;
     margin-left: 375px;
 }
-/* #pic1 {
-    height: 1in;
-    width: 3in;
-} */
+
 .menu_middle {
     position: absolute;
     margin-left: 40%;
-    top: 37mm;
+    top: 48mm;
 }
-/* #pic2 {
-    height: 2in;
-    width: 2in;
-} */
+
 .menu_right{
     margin-left: 57%;
-    margin-top: -13.5%;
-
-
+    margin-top: -11.7%;
 }
-#btnOrder:hover {
- background-color: rgb(165, 161, 161);
-}
+
 #btnOrder {
     margin: 10px 0px 0px 100px;
     width: 100px;
@@ -63,10 +53,38 @@ h3 {
     color: black;
     font-style: italic;
     border-style: groove;
-    margin-top: 280px;
+    margin-top: 310px;
     margin-left: 56%;
+}
+
+#btnOrder:hover {
+ background-color: rgb(165, 161, 161);
 }
 
 #cart {
     margin-left: 375px;
+}
+
+.dropdown {
+    z-index: 4;
+    width: 150px;
+}
+#dropdownMenuLink {
+    background-color: black;
+    color: black;
+    font-weight: 600;
+}
+
+.toppings {
+    margin-right: 4px;
+}
+
+.size {
+    margin-right: 4px;
+}
+#dropdownMenuLink {
+    background-color: black;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
 }

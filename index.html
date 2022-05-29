@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>New York Pizza</title>
-        <meta http-equiv="Content-Type " content="text/html; charset=utf-8">
-        <meta content="width=device-width,initial-scale=1.0" name="viewport">
-        <link rel="stylesheet" type="text/css" href="./CSS/Pizza.css">
-        <script src="./JavaScript/Pizza.js" defer></script>
+    <title>New York Pizza</title>
+    <meta http-equiv="Content-Type " content="text/html; charset=utf-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="./CSS/Pizza.css">
+    <script src="./JavaScript/Pizza.js" defer></script>
+
+    <!-- bootstrap links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </head>
     <body>
+
+<!--OTHER WEBSITE LINKS DROPDOWN MENU-->
+    <div class="dropdown navbar-light">
+        <a class="btn btn-secondary dropdown-toggle bg-transparent border-1" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Websites
+        </a>
+            <ul class="dropdown-menu navbar-light bg-transparent" aria-labelledby="dropdownMenuLink" >
+                <li><a class="dropdown-item" href="https://evanm02.github.io/Portfolio-Website/" target="_blank">Portfolio Website</a></li>
+                <li><a class="dropdown-item" href="https://evanm02.github.io/Academy_Cinemas/" target="_blank">Academy Cinemas Website</a></li>
+                <li><a class="dropdown-item" href="https://evanm02.github.io/Slideshow_and_Countdown/" target="_blank">SlideShow and Countdown</a></li>
+                <li><a class="dropdown-item" href="https://evanm02.github.io/Single_page_Website/" target="_blank">Single Page Website</a></li>
+                <li><a class="dropdown-item" href="https://evanm02.github.io/Calculator_App/" target="_blank">Calculator App</a></li>
+                <li><a class="dropdown-item" href="https://evanm02.github.io/The_Space_Station/" target="_blank">The Space Station Website</a></li>                
+                <li><a class="dropdown-item" href="https://evanm02.github.io/Tic_Tac_Toe/" target="_blank">Tic Tac Toe</a></li>
+                <li><a class="dropdown-item" href="https://evanm02.github.io/To_Do_App/" target="_blank">To Do App</a></li>                        
+            </ul>
+    </div>
+<!--END OF DROP DOWN MENU-->
+
         <div id="menuBG">
             <h1 id="titleOne">New York Pizza </h1>
             <input id="btnOrder" type="button" onclick="getReceipt()" 
@@ -30,7 +53,6 @@
                 </div>
 
                 <div class="menu_middle">
-                    <!-- <img id="pic2" src="./Images/toppings.png" alt="Sorry could not load image"> -->
                     <h3>Vegetables:</h3>
                     <input class="toppings" type="checkbox" name="Topping"
                         value="Green Pepper">Green Pepper<br>

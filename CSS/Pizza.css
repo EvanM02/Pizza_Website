@@ -44,6 +44,9 @@ body {
   color: black;
 }
 
+.menu_right {
+  padding-left: 25%;
+}
 .menu_right h3 {
   font-weight: 600;
   font-style: oblique;
@@ -71,6 +74,8 @@ body {
   font-size: 1rem;
   background-color: rgb(224, 238, 249);
   margin-bottom: 2.5px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 @media screen and (min-width: 501px) and (max-width: 880px) and (orientation: landscape) {
   #titleOne {

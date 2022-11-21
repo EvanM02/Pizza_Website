@@ -1,8 +1,8 @@
 body {
-    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
 }
-.dropdown-menu{
-    background-color:  #bb9df3 !important;
+.dropdown-menu {
+  background-color: #bb9df3 !important;
 }
 #titleOne {
   grid-column-start: 2;
@@ -13,9 +13,8 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: oldlace;
-  text-align:start !important;
+  text-align: start !important;
   text-shadow: 2px 2px gray;
-
 }
 #frmMenu {
   display: grid;
@@ -24,33 +23,31 @@ body {
   padding: 4rem;
 }
 
-
 .menu_left h3 {
   grid-column-start: 1;
-
 }
 .menu_left h3 {
-    font-weight: 600;
-    font-style: oblique;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: black;
+  font-weight: 600;
+  font-style: oblique;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
 }
 
 .menu_middle h3 {
-    font-weight: 600;
-    font-style: oblique;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: black;
+  font-weight: 600;
+  font-style: oblique;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
 }
 
 .menu_right h3 {
-    font-weight: 600;
-    font-style: oblique;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: black;
+  font-weight: 600;
+  font-style: oblique;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
 }
 
 #cart {
@@ -62,18 +59,18 @@ body {
   grid-column-start: 2;
 }
 
-#btnOrder, #btn_reload {
-    border-radius: 8px;
-    text-shadow: 2px grey;
-    border-width: 0.5px;
-    width: 1.5in;
-    height: 32px;
-    font-size: 1rem;
-    background-color: rgb(224, 238, 249);
-    margin-bottom: 2.5px;
+#btnOrder,
+#btn_reload {
+  border-radius: 8px;
+  text-shadow: 2px grey;
+  border-width: 0.5px;
+  width: 1.5in;
+  height: 32px;
+  font-size: 1rem;
+  background-color: rgb(224, 238, 249);
+  margin-bottom: 2.5px;
 }
 @media screen and (min-width: 501px) and (max-width: 880px) and (orientation: landscape) {
-
   #titleOne {
     text-align: center;
     font-size: 2rem;
@@ -84,72 +81,67 @@ body {
 }
 
 @media screen and (min-width: 501px) and (max-width: 880px) and (orientation: portrait) {
-    #frmMenu {
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(3, 1fr);
-
-    }
-    #titleOne {
-      text-align: center;
-      font-size: 2rem;
-    }
-    #btnOrder {
-      margin-bottom: 5px;
-    }
-
+  #frmMenu {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #titleOne {
+    text-align: center;
+    font-size: 2rem;
+  }
+  #btnOrder {
+    margin-bottom: 5px;
+  }
 }
 
-
-
 @media screen and (max-width: 500px) {
-    #frmMenu {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1 100px, 2 1fr, 3 1fr;
-        padding: 0rem;
-      }
+  #frmMenu {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1 100px, 2 1fr, 3 1fr;
+    padding: 0rem;
+  }
 
-      #titleOne {
-        text-align: center;
-        font-size: 1.5rem;
-        grid-column-start: 2;
-        grid-column-end: span 3;
-        grid-row-start: 1;
-      }
+  #titleOne {
+    text-align: center;
+    font-size: 1.5rem;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+  }
 
-      .menu_left {
-        grid-row-start: 2 !important;
-        grid-column-start: 1;
-        grid-column-end: span 2;
-        padding-left: 30%;
-      }
-      .menu_left h3 {
-        font-size: 1.2rem;
-      }
+  .menu_left {
+    grid-row-start: 2 !important;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    padding-left: 30%;
+  }
+  .menu_left h3 {
+    font-size: 1.2rem;
+  }
 
-      .menu_middle {
-        grid-column: 2;
-        grid-column-end: span 3;
-        grid-row-start: 2!important;
-        padding-left: 40%;
-      }
-      .menu_middle h3 {
-        font-size: 1.2rem;
-      }
-      .menu_right {
-        grid-column-start: 2;
-        grid-column-end: span 3;
-        grid-row-start: 3;
-        padding-left: 10%;
-      }
-      .menu_right h3{
-        font-size: 1.2rem;
-      }
+  .menu_middle {
+    grid-column: 2;
+    grid-column-end: span 3;
+    grid-row-start: 2 !important;
+    padding-left: 40%;
+  }
+  .menu_middle h3 {
+    font-size: 1.2rem;
+  }
+  .menu_right {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    padding-left: 10%;
+  }
+  .menu_right h3 {
+    font-size: 1.2rem;
+  }
 
-      #btnOrder {
-        margin-bottom: 5px;
-      }
-
+  #btnOrder {
+    margin-bottom: 5px;
+  }
 }

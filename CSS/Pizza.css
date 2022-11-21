@@ -77,7 +77,7 @@ body {
         display: grid;
         gap: 1.5rem;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1 100px, 2 1fr, 3 fr;
+        grid-template-rows: 1 100px, 2 1fr, 3 1fr;
         padding: 0rem;
       }
 
@@ -91,7 +91,9 @@ body {
 
       .menu_left {
         grid-row-start: 2 !important;
-        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        padding-left: 30%;
       }
       .menu_left h3 {
         font-size: 1.2rem;
@@ -99,14 +101,18 @@ body {
 
       .menu_middle {
         grid-column: 2;
+        grid-column-end: span 3;
         grid-row-start: 2!important;
+        padding-left: 40%;
       }
       .menu_middle h3 {
         font-size: 1.2rem;
       }
       .menu_right {
-        grid-column-start: 3;
-        grid-row-start: 2 !important ;
+        grid-column-start: 2;
+        grid-column-end: span 3;
+        grid-row-start: 3;
+        padding-left: 10%;
       }
       .menu_right h3{
         font-size: 1.2rem;

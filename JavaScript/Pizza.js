@@ -49,7 +49,7 @@ function getTopping(runningTotal, text1, selectedSize, sizeTotal) {
 
   const totals = `
 	<br>
-	<h1><strong> Your total is ${runningTotal}.00</strong></h1>
+	<h1><strong> Your total is $${runningTotal}.00</strong></h1>
 	<p> You added ${toppingCount} topping's to your ${selectedSize} we have a deal going on now where you get one topping for free</p>
 	<p> Here is a break down of what  you ordered: <br>
 	 ${selectedSize} $${sizeTotal}.00 

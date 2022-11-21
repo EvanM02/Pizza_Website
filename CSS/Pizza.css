@@ -70,7 +70,37 @@ body {
     height: 32px;
     font-size: 1rem;
     background-color: rgb(224, 238, 249);
+    margin-bottom: 2.5px;
 }
+@media screen and (min-width: 501px) and (max-width: 880px) and (orientation: landscape) {
+
+  #titleOne {
+    text-align: center;
+    font-size: 2rem;
+  }
+  #btnOrder {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 880px) and (orientation: portrait) {
+    #frmMenu {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+    #titleOne {
+      text-align: center;
+      font-size: 2rem;
+    }
+    #btnOrder {
+      margin-bottom: 5px;
+    }
+
+}
+
+
 
 @media screen and (max-width: 500px) {
     #frmMenu {

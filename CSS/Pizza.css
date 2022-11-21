@@ -4,6 +4,7 @@ body {
 .dropdown-menu {
   background-color: #bb9df3 !important;
 }
+
 #titleOne {
   grid-column-start: 2;
   grid-column-end: span 3;
@@ -17,6 +18,7 @@ body {
   text-shadow: 2px 2px gray;
 }
 #frmMenu {
+  padding-top: 0px !important;
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);

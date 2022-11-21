@@ -57,7 +57,6 @@ function getTopping(runningTotal, text1, selectedSize, sizeTotal) {
 `;
   document.getElementById("totalPrice").innerHTML = totals;
 }
-
 // this reloads the page and clears the check boxes and radios
 function reloadWindow() {
   window.location.reload(true);

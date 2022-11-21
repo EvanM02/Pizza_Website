@@ -1,90 +1,83 @@
 body {
-    background-color:rgb(236, 238, 240);
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
 }
-
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    color: maroon;
-}
-
-h3 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    color: maroon;
-}
-#menuBG {
-    width: 100%;
-    height:100%;
+.dropdown-menu{
+    background-color:  #bb9df3 !important;
 }
 #titleOne {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    color: maroon;
-    margin-left: 33%;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: oblique;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: oldlace;
+  text-align:start !important;
+  text-shadow: 2px 2px gray;
+
 }
-.menu_left {
-    margin-top: 1in;
-    margin-left: 375px;
+#frmMenu {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem;
 }
 
-.menu_middle {
-    position: absolute;
-    margin-left: 40%;
-    top: 48mm;
-}
 
-.menu_right{
-    margin-left: 57%;
-    margin-top: -11.7%;
-}
+.menu_left h3 {
+  grid-column-start: 1;
 
-#btnOrder {
-    margin: 10px 0px 0px 100px;
-    width: 100px;
-    height: 40px;
 }
-
-#btnOrder {
-    position: absolute;
-    z-index: 1;
-    border-radius: 4px;
-    background-color: rgb(255, 255, 224);
+.menu_left h3 {
+    font-weight: 600;
+    font-style: oblique;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     color: black;
-    font-style: italic;
-    border-style: groove;
-    margin-top: 310px;
-    margin-left: 56%;
 }
 
-#btnOrder:hover {
- background-color: rgb(165, 161, 161);
+.menu_middle h3 {
+    font-weight: 600;
+    font-style: oblique;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.menu_right h3 {
+    font-weight: 600;
+    font-style: oblique;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
 }
 
 #cart {
-    margin-left: 375px;
+  grid-column-start: 2;
+  text-align: center;
 }
 
-.dropdown {
-    z-index: 4;
-    width: 150px;
-}
-#dropdownMenuLink {
-    background-color: black;
-    color: black;
-    font-weight: 600;
+.buttons {
+  grid-column-start: 2;
 }
 
-.toppings {
-    margin-right: 4px;
+#btnOrder, #btn_reload {
+    border-radius: 8px;
+    text-shadow: 2px grey;
+    border-width: 0.5px;
+    width: 1.5in;
+    height: 32px;
+    font-size: 1rem;
+    background-color: rgb(224, 238, 249);
 }
 
-.size {
-    margin-right: 4px;
-}
-#dropdownMenuLink {
-    background-color: black;
-    color: black;
-    font-weight: 600;
-    font-size: 20px;
+@media screen and (min-width: 300px) and (max-width: 480px) {
+    #frmMenu {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 4rem;
+      }
+
 }

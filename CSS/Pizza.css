@@ -5,6 +5,16 @@ body {
   background-color: #bb9df3 !important;
 }
 
+#frmMenu {
+  padding-top: 0px !important;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 #titleOne {
   grid-column-start: 2;
   grid-column-end: span 3;
@@ -16,13 +26,6 @@ body {
   color: oldlace;
   text-align: start !important;
   text-shadow: 2px 2px gray;
-}
-#frmMenu {
-  padding-top: 0px !important;
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 4rem;
 }
 
 .menu_left h3 {
@@ -77,6 +80,8 @@ body {
   margin-left: 20%;
   margin-right: 20%;
 }
+
+/* This is the styling for tablets in landscape orientation */
 @media screen and (min-width: 501px) and (max-width: 880px) and (orientation: landscape) {
   #titleOne {
     text-align: center;
@@ -87,6 +92,7 @@ body {
   }
 }
 
+/* This is the styling for tablets in portrait orientation */
 @media screen and (min-width: 501px) and (max-width: 880px) and (orientation: portrait) {
   #frmMenu {
     display: grid;
@@ -99,8 +105,16 @@ body {
   }
   #btnOrder {
     margin-bottom: 5px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  #btn_reload {
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }
+
+/* This is the styling for smartphones */
 
 @media screen and (max-width: 500px) {
   #frmMenu {
@@ -150,5 +164,11 @@ body {
 
   #btnOrder {
     margin-bottom: 5px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  #btn_reload {
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }

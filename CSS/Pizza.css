@@ -140,7 +140,7 @@ body {
     grid-row-start: 2 !important;
     grid-column-start: 1;
     grid-column-end: span 2;
-    padding-left: 30%;
+    padding-left: 10%;
   }
   .menu_left h3 {
     font-size: 1.2rem;

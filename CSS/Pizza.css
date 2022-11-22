@@ -98,6 +98,9 @@ body {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   #titleOne {
     text-align: center;

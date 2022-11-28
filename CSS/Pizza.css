@@ -1,9 +1,32 @@
 body {
   background-image: linear-gradient(to right, #8360c3, #2ebf91);
 }
-.dropdown-menu {
-  background-color: #bb9df3 !important;
+
+.btn {
+  border-width: 2px !important;
+  border-color: black !important; 
 }
+.dropdown-menu {
+  transition: all 0.5s ease-in-out;
+  background-color: #8360c3;
+  border-width: 3px;
+  box-shadow: 4px 4px black;
+}
+.dropdown-item {
+  animation: 2s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 
 #frmMenu {
   padding-top: 0px !important;

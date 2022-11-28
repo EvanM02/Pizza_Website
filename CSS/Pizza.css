@@ -122,16 +122,17 @@ body {
 @media screen and (max-width: 500px) {
   #frmMenu {
     display: grid;
-    gap: 1.5rem;
+    gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1 100px, 2 1fr, 3 1fr, 4fr;
     padding: 0rem;
   }
 
   #titleOne {
-    text-align: center;
-    font-size: 1.5rem;
-    grid-column-start: 2;
+    margin-top: 20px;
+    margin-left: 3%;
+    font-size: 2rem;
+    grid-column-start: 1;
     grid-column-end: span 3;
     grid-row-start: 1;
   }
@@ -141,7 +142,9 @@ body {
     grid-column-end: span 3;
     grid-row-start: 2 !important;
     padding-left: 10%;
-
+  }
+  .menu_left h3 {
+    font-size: 1.8rem;
   }
 
   .menu_middle {
@@ -150,18 +153,26 @@ body {
     grid-row-start: 3 !important;
     padding-left: 10%;
   }
+  .menu_middle h3 {
+    font-size: 1.8rem;
+  }
+  
   .menu_right {
     grid-column-start: 2;
     grid-column-end: span 3;
     grid-row-start: 4;
     padding-left: 10%;
   }
+  .menu_right h3 {
+    font-size: 1.8rem;
+  }
 
   #btnOrder {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-left: 0%;
     margin-right: 0%;
   }
+
   #btn_reload {
     margin-left: 0%;
     margin-right: 0%;

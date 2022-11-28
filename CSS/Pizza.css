@@ -11,11 +11,14 @@ body {
   background-color: #8360c3;
   border-width: 3px;
   box-shadow: 4px 4px black;
+  background-color: #8360c3 !important;
 }
 .dropdown-item {
   animation: 2s fadeIn;
   animation-fill-mode: forwards;
   visibility: hidden;
+  color: white !important;
+
 }
 
 @keyframes fadeIn {

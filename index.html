@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <title>New York Pizza</title>
-    <link rel="icon" href="./Images/pizza.webp" type="image/icon" />
     <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="description" content=" A Pizz ordering website " />
+    <meta name="keywords" content=" pizza, order, food" />
+    <link rel="icon" href="./Images/pizza.webp" type="image/icon" />
     <link rel="stylesheet" type="text/css" href="./CSS/Pizza.css" />
     <script src="./JavaScript/Pizza.js" defer></script>
     <!-- bootstrap links-->
@@ -20,11 +23,11 @@
     ></script>
   </head>
   <body>
-    
-    <!--OTHER WEBSITE LINKS DROPDOWN MENU-->
-    <div class="dropdown ">
+    <!-- WEBSITE DROPDOWN MENU -->
+    <div class="dropdown bg-transparent">
       <a
-        class="btn btn-secondary dropdown-toggle bg-transparent "
+        class="btn btn-secondary bg-transparent dropdown-toggle"
+        href="#"
         role="button"
         id="dropdownMenuLink"
         data-bs-toggle="dropdown"
@@ -32,10 +35,7 @@
       >
         Websites
       </a>
-      <ul
-        class="dropdown-menu "
-        aria-labelledby="dropdownMenuLink"
-      >
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         <li>
           <a
             class="dropdown-item"
@@ -47,21 +47,20 @@
           <a
             class="dropdown-item"
             href="https://evanm02.github.io/Academy_Cinemas/"
-            >Academy Cinemas Website</a
           >
+            Academy Cinemas
+          </a>
         </li>
         <li>
           <a
             class="dropdown-item"
             href="https://evanm02.github.io/Slideshow_and_Countdown/"
-            >SlideShow and Countdown</a
+            >SlideShow and Countdown Timer</a
           >
         </li>
         <li>
-          <a
-            class="dropdown-item"
-            href="https://evanm02.github.io/Single_page_Website/"
-            >Single Page Website</a
+          <a class="dropdown-item" href="https://evanm02.github.io/To_Do_App/"
+            >To Do List</a
           >
         </li>
         <li>
@@ -75,8 +74,15 @@
           <a
             class="dropdown-item"
             href="https://evanm02.github.io/The_Space_Station/"
-            >The Space Station Website</a
-          >
+            >The Space Station
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="https://evanm02.github.io/Tip_and_Tax_Calculator/"
+            >Tax and Tip Percentage Calculator
+          </a>
         </li>
         <li>
           <a class="dropdown-item" href="https://evanm02.github.io/Tic_Tac_Toe/"
@@ -86,167 +92,161 @@
         <li>
           <a
             class="dropdown-item"
-            href="https://evanm02.github.io/Pizza_Website/"
-            >Pizza Website
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="https://evanm02.github.io/To_Do_App/"
-            >To Do App</a
+            href="https://evanm02.github.io/Single_page_Website/"
+            >Single Page Website</a
           >
         </li>
         <li>
           <a
             class="dropdown-item"
-            href="https://evanm02.github.io/Tip_and_Tax_Calculator/"
-            >Tip and Tax Calculator</a
+            href="https://evanm02.github.io/Pizza_Website/"
           >
+            Pizza Website
+          </a>
         </li>
       </ul>
     </div>
     <!--END OF DROP DOWN MENU-->
 
-      <!-- The Pizza size menu -->
+    <!-- The Pizza size menu -->
 
-      <form id="frmMenu">
-        <h1 id="titleOne">New York Pizza</h1>
-        <div class="menu_left">
-          <h3>Size:</h3>
-          <input
-            class="size"
-            type="radio"
-            name="Size"
-            value="Personal Pizza"
-          />Personal<br />
-          <input
-            class="size"
-            type="radio"
-            name="Size"
-            value="Small Pizza"
-          />Small<br />
-          <input
-            class="size"
-            type="radio"
-            name="Size"
-            value="Medium Pizza"
-          />Medium<br />
-          <input
-            class="size"
-            type="radio"
-            name="Size"
-            value="Large Pizza"
-          />Large<br />
-          <input
-            class="size"
-            type="radio"
-            name="Size"
-            value="Extra Large Pizza"
-          />Extra Large<br />
-        </div>
+    <form id="frmMenu">
+      <h1 id="titleOne">New York Pizza</h1>
+      <div class="menu_left">
+        <h3>Size:</h3>
+        <input
+          class="size"
+          type="radio"
+          name="Size"
+          value="Personal Pizza"
+        />Personal<br />
+        <input
+          class="size"
+          type="radio"
+          name="Size"
+          value="Small Pizza"
+        />Small<br />
+        <input
+          class="size"
+          type="radio"
+          name="Size"
+          value="Medium Pizza"
+        />Medium<br />
+        <input
+          class="size"
+          type="radio"
+          name="Size"
+          value="Large Pizza"
+        />Large<br />
+        <input
+          class="size"
+          type="radio"
+          name="Size"
+          value="Extra Large Pizza"
+        />Extra Large<br />
+      </div>
 
-        <!-- This is the vegetables toppings menu-->
-        <div class="menu_middle">
-          <h3>Vegetables:</h3>
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Topping"
-            value="Green Pepper"
-          />Green Pepper<br />
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Toppings"
-            value="Mushrooms"
-          />Mushrooms<br />
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Toppings"
-            value="Tomatoes"
-          />Tomatoes<br />
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Toppings"
-            value="Olives"
-          />Olives<br />
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Toppings"
-            value="Bell Peppers"
-          />Bell Peppers<br />
-        </div>
+      <!-- This is the vegetables toppings menu-->
+      <div class="menu_middle">
+        <h3>Vegetables:</h3>
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Topping"
+          value="Green Pepper"
+        />Green Pepper<br />
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Toppings"
+          value="Mushrooms"
+        />Mushrooms<br />
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Toppings"
+          value="Tomatoes"
+        />Tomatoes<br />
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Toppings"
+          value="Olives"
+        />Olives<br />
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Toppings"
+          value="Bell Peppers"
+        />Bell Peppers<br />
+      </div>
 
-        <!-- This is the meat toppings menu-->
-        <div class="menu_right">
-          <h3>Meats:</h3>
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Topping"
-            value="Pepperoni"
-          />Pepperoni<br />
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Topping"
-            value="Sausage"
-          />Sausage<br />
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Topping"
-            value="Canadian Bacon"
-          />Canadian Bacon<br />
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Topping"
-            value="Ground Beef"
-          />Ground Beef<br />
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Topping"
-            value="Anchovy"
-          />Anchovy<br />
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Topping"
-            value="Chicken"
-          />Chicken<br />
-          <input
-            class="toppings"
-            type="checkbox"
-            name="Topping"
-            value="Ham"
-          />Ham<br />
-        </div>
-          <!-- The two buttons-->
-          <div class="buttons">
-            <input
-            id="btnOrder"
-            type="button"
-            onclick="getReceipt()"
-            value="Place Order"
-          />
-          <input
-            id="btn_reload"
-            type="button"
-            onclick="reloadWindow() "
-            value="New Order"
-          />
-          </div>
+      <!-- This is the meat toppings menu-->
+      <div class="menu_right">
+        <h3>Meats:</h3>
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Topping"
+          value="Pepperoni"
+        />Pepperoni<br />
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Topping"
+          value="Sausage"
+        />Sausage<br />
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Topping"
+          value="Canadian Bacon"
+        />Canadian Bacon<br />
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Topping"
+          value="Ground Beef"
+        />Ground Beef<br />
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Topping"
+          value="Anchovy"
+        />Anchovy<br />
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Topping"
+          value="Chicken"
+        />Chicken<br />
+        <input
+          class="toppings"
+          type="checkbox"
+          name="Topping"
+          value="Ham"
+        />Ham<br />
+      </div>
+      <!-- The two buttons-->
+      <div class="buttons">
+        <input
+          id="btnOrder"
+          type="button"
+          onclick="getReceipt()"
+          value="Place Order"
+        />
+        <input
+          id="btn_reload"
+          type="button"
+          onclick="reloadWindow() "
+          value="New Order"
+        />
+      </div>
 
-
-        <!--This is where the total and the user order list will be outputted-->
-        <div id="cart">
-        <div id="totalPrice">
-        </div>
-        </div>
-      </form>
+      <!--This is where the total and the user order list will be outputted-->
+      <div id="cart">
+        <div id="totalPrice"></div>
+      </div>
+    </form>
   </body>
 </html>

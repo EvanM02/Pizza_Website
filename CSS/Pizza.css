@@ -223,3 +223,39 @@ body {
     margin-right: 0%;
   }
 }
+
+/* THIS IS THE DIALOG BOX STYLING */
+#dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: calc(40% - 150px);
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background-color: mediumaquamarine;
+  border-width: 3px;
+  border-style: ridge;
+  border-color: black;
+}
+/* THIS TARGETS THE TEXT WITH IN THE DIALOG BOX */
+#words {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/*THIS TARGETS THE CLOSE BUTTON WITHIN THE DIALOG BOX */
+#hide {
+  background-color: rgb(60, 135, 110);
+  border-radius: 8px;
+  color: lightgray;
+  font-size: 1rem;
+  font-weight: 600;
+}
+#hide:hover {
+  font-size: 1.1rem;
+  background-color: white;
+  color: black;
+}

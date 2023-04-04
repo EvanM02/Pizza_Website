@@ -5,6 +5,7 @@ function getReceipt() {
   var runningTotal = 0;
   var sizeTotal = 0;
   var sizeArray = document.getElementsByClassName("size");
+  var selectedSize = null; // initialize selectedSize to null
 
   for (var i = 0; i < sizeArray.length; i++) {
     if (sizeArray[i].checked) {
@@ -12,6 +13,13 @@ function getReceipt() {
       text1 = text1;
     }
   }
+  // if no size has been selected, display an error message
+  if (selectedSize === null) {
+    popUp();
+    return;
+  }
+
+  // continue with calculations if a size has been selected
   if (selectedSize === "Personal Pizza") {
     sizeTotal = 6;
   } else if (selectedSize === "Small Pizza") {
@@ -61,3 +69,21 @@ function getTopping(runningTotal, text1, selectedSize, sizeTotal) {
 function reloadWindow() {
   window.location.reload(true);
 }
+
+function popUp() {
+  document.getElementById("dialog").style.display = "block";
+}
+
+function closePopUp() {
+  document.getElementById("dialog").style.display = "none";
+}
+
+// We are making a variable and giving it the value of element id hide
+var closePopEn = document.getElementById("hide");
+// Now we add the event listener
+closePopEn.addEventListener("keypress", function (event) {
+  // Then we check if the user has pressed the enter key. If so we close the dialog box.
+  if (event.key == "Enter") {
+    document.getElementById("dialog").style.display = "none";
+  }
+});

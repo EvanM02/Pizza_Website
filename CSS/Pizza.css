@@ -216,11 +216,13 @@ body {
     margin-bottom: 10px;
     margin-left: 0%;
     margin-right: 0%;
+    color: black;
   }
 
   #btn_reload {
     margin-left: 0%;
     margin-right: 0%;
+    color: black;
   }
 }
 
